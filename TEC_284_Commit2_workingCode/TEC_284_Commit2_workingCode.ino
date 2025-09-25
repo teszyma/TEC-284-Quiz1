@@ -8,9 +8,9 @@ const int BTN_R = 2;
 const int BTN_G = 3;
 const int BTN_B = 4;
 
-// simple helper to set an led
+// set the led
 void led(int pin, bool on) {
-  digitalWrite(pin, on ? HIGH : LOW); // common cathode: HIGH=on
+  digitalWrite(pin, on ? HIGH : LOW); // HIGH=on
 }
 
 void setup() {
@@ -46,6 +46,7 @@ void loop() {
     led(BLUE, true);  // stays on
   }
 }
+
 
 
 
